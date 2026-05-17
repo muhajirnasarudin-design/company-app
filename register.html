@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Register</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Register Company App</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <div class="container">
 
-<h2>Register</h2>
+  <h1>COMPANY APP</h1>
 
-<input type="text" id="nama" placeholder="Nama">
-<input type="email" id="email" placeholder="Email">
-<input type="password" id="password" placeholder="Password">
-<input type="text" id="companyId" placeholder="Company ID">
+  <h2>Register</h2>
 
-<button onclick="register()">Register</button>
+  <input type="text" id="nama" placeholder="Nama Lengkap">
+
+  <input type="email" id="email" placeholder="Email">
+
+  <input type="password" id="password" placeholder="Password">
+
+  <input type="text" id="companyId" placeholder="Company ID">
+
+  <button onclick="register()">
+    Register
+  </button>
+
+  <p>
+    Sudah punya akun?
+    <a href="login.html">
+      Login
+    </a>
+  </p>
 
 </div>
 
+<!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
-<script src="firebase.js"></script>
-<script src="auth.js"></script>
+<!-- JS -->
+<script src="assets/js/firebase.js"></script>
+
+<script src="assets/js/auth.js"></script>
 
 </body>
 </html>
